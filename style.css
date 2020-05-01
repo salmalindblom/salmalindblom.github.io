@@ -1,0 +1,40 @@
+        <style type="text/css">
+.grid_parent {
+    display: grid ;
+    grid-template-columns: [start] 1fr [one-fourth] 1fr [two-fourths] 1fr [three-fourths] 1fr [end];
+    grid-gap: 1em ;
+    grid-auto-rows: minmax(200px, auto) ;
+    align-items: stretch ;
+    grid-template-areas:
+        "header header header header"
+        "sidebar main-content main-content sidebar"
+        "sidebar main-content main-content sidebar"
+        "footer footer footer footer"
+}
+
+section.header {
+      background-color: rgba(173, 184, 198); /* greyish blue */
+      color: rgba(0, 0, 0);
+      font-family: mrs-eaves, serif;
+      font-weight: 400;
+      font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+  margin: 50;
+  padding: 100;
+}
+
+li {
+  display: inline;
+  padding: 50px;
+}
+
+section.footer {
+     font-family: mrs-eaves-roman-small-caps, sans-serif;
+font-weight: 400;
+font-style: normal;
+text-align: center;
+color:  rgba(173, 184, 198);
+}
