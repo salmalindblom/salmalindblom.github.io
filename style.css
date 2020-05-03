@@ -45,16 +45,75 @@ body {
      grid-template-columns: 1fr 1fr 1fr;
      grid-template-areas:
      'header header header'
-     'photo photo photo'
+     'photo1 photo2 photo3'
      'footer footer footer'
 }
 
-/* About css */
+/* Shop css */
 
-section.photo {
-     grid-area: photo;
+section.photo1 {
+     padding-top: 40px;
+     grid-area: photo1;
+     font-family: mrs-eaves, serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 20px;
+     width: 100%;
+     text-align: center;
+}
+
+section.photo2 {
+     padding-top: 40px;
+     grid-area: photo2;
+     font-family: mrs-eaves, serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 20px;
+     width: 100%;
+     text-align: center;
+}
+
+section.photo3 {
+     padding-top: 40px;
+     grid-area: photo3;
+     font-family: mrs-eaves, serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 20px;
+     width: 100%;
+     text-align: center;
 
 }
+
+/* Print names */
+p.Name {
+     font-family: mrs-eaves,serif;
+     font-weight: 400;
+     font-style: italic;
+     text-align: center;
+     font-size: 25px;
+}
+
+/* p.Name:link, p.Name:visited {
+     color: black;
+     text-decoration: none;
+     display: inline-block;
+}
+
+p.Name:hover, p.Name:active {
+     color: rgba(173, 184, 198) ;
+} */
+
+/* Page Links and Email */
+a:link, a:visited {
+     color: black;
+     text-decoration: none;
+     display: inline-block;
+}
+a:hover, a:active {
+     color: rgba(255, 255, 255) ;
+}
+
 
 /* About Page Main-content */
 
@@ -69,6 +128,10 @@ section.text {
      position: -webkit-sticky;
      position: sticky;
      padding: 50px;
+}
+
+section.photo {
+          grid-area: photo;
 }
 
 /* Navigation */
@@ -105,12 +168,12 @@ li.CMP {
 }
 
 
-/* Main-content */
+/* Home Page Main-content */
 section.hero-image {
      grid-area: main-content;
 }
 
-/* Image Gallery */
+/* Inspiration and Process Image Galleries */
 
 * {
      /* box-sizing: border-box; */
@@ -126,6 +189,12 @@ section.hero-image {
 .inspiration {
      display: none;
 }
+
+/* Hide the images by default */
+.process {
+     display: none;
+}
+
 
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {

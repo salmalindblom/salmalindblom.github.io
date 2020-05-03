@@ -17,17 +17,6 @@
                     <li><a href="./about.html">About</a></li>
                     <li><a href="./shop.html">Shop</a></li>
                </ul>
-               <style>
-                    a:link, a:visited {
-                      color: black;
-                      text-decoration: none;
-                      display: inline-block;
-                    }
-
-                    a:hover, a:active {
-                      color: rgba(255, 255, 255) ;
-                    }
-                    </style>
           </section>
 
 
@@ -37,24 +26,24 @@
           <div class="container">
 
                <!-- Full-width images with number text -->
-               <div class="inspiration">
+               <div class="process">
                     <div class="numbertext">1 / 4</div>
-                    <img src="KPT.JPG" style="width:100%">
+                    <img src="Tools.JPG" style="width:100%">
                </div>
 
-               <div class="inspiration">
+               <div class="process">
                     <div class="numbertext">2 / 4</div>
-                    <img src="Home.JPG" style="width:100%">
+                    <img src="3Plates.JPG" style="width:100%">
                </div>
 
-               <div class="inspiration">
+               <div class="process">
                     <div class="numbertext">3 / 4</div>
-                    <img src="shells.JPG" style="width:100%">
+                    <img src="Floor.JPG" style="width:100%">
                </div>
 
-               <div class="inspiration">
+               <div class="process">
                     <div class="numbertext">4 / 4</div>
-                    <img src="dead_leaves.JPG" style="width:100%">
+                    <img src="Shell_Plate.JPG" style="width:100%">
                </div>
 
 
@@ -70,16 +59,16 @@
                <!-- Thumbnail images -->
                <div class="row">
                     <div class="column">
-                         <img class="demo cursor" src="KPT.JPG" style="width:100%" onclick="currentSlide(1)" alt="Kennebunkport Conservation Trust">
+                         <img class="demo cursor" src="Tools.JPG" style="width:100%" onclick="currentSlide(1)" alt="Tools">
                     </div>
                     <div class="column">
-                         <img class="demo cursor" src="Home.JPG" style="width:100%" onclick="currentSlide(2)" alt="Home">
+                         <img class="demo cursor" src="3Plates.JPG" style="width:100%" onclick="currentSlide(2)" alt="3 Plates in process">
                     </div>
                     <div class="column">
-                         <img class="demo cursor" src="shells.JPG" style="width:100%" onclick="currentSlide(3)" alt="Shells and Forest Finds">
+                         <img class="demo cursor" src="Floor.JPG" style="width:100%" onclick="currentSlide(3)" alt="Supplies">
                     </div>
                     <div class="column">
-                         <img class="demo cursor" src="dead_leaves.JPG" style="width:100%" onclick="currentSlide(4)" alt="Swaying Leaves">
+                         <img class="demo cursor" src="Shell_Plate.JPG" style="width:100%" onclick="currentSlide(4)" alt="Shell Plate">
                     </div>
 
                </div>
@@ -99,7 +88,7 @@
 
           function showSlides(n) {
                var i;
-               var slides = document.getElementsByClassName("inspiration");
+               var slides = document.getElementsByClassName("process");
                var dots = document.getElementsByClassName("demo");
                var captionText = document.getElementById("caption");
                if (n > slides.length) {slideIndex = 1}
